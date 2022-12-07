@@ -38,3 +38,8 @@ function removeSmallest(numbers) {
   return newNums;
 }
 ```
+
+## Languages:
+
+- English - Intermediate
+- Russian - Native
