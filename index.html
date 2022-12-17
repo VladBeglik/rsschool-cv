@@ -32,9 +32,57 @@
                 when solving problems.
             </p>
         </section>
-        <section class="section" id="skills"></section>
-        <section class="section" id="code"></section>
-        <section class="section" id="languages"></section>
+        <section class="section" id="skills">
+            <h2 class="skills-title">Skills</h2>
+            <ul class="skill-list">
+                <li class="skill-item">html</li>
+                <li class="skill-item">css</li>
+                <li class="skill-item">js</li>
+                <li class="skill-item">.net</li>
+                <li class="skill-item">git</li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2 class="code-title">Code</h2>
+            <div class="code-description">
+                <h3 class="task">Task</h3>
+                <p>Given an array of integers, remove the smallest value. Do not mutate the original array/list.
+                    If there are multiple elements with the same value, remove the one with a lower index.
+                    If you get an empty array/list, return an empty array/list.
+                    Don’t change the order of the elements that are left.
+                </p>
+            </div>
+            <code>
+                function removeSmallest(numbers) {<Br>
+                    var smallest;<Br>
+                    var newNums = [];<Br>
+                    numbers.forEach(function(num) {<Br>
+                        if (smallest > num || smallest === undefined) {<Br>
+                            smallest = num;<Br>
+                        }<Br>
+                    });<Br>
+                    var index = numbers.indexOf(smallest);<Br>
+                    numbers.forEach(function(n, i) {<Br>
+                        if (i !== index) {<Br>
+                            newNums.push(n);<Br>
+                        }<Br>
+                    });<Br>
+                <Br>
+                    return newNums;<Br>
+                }
+            </code>
+        </section>
+        <section class="section" id="education">
+            <h2 class="education-title">Education</h2>
+            <p>Belarusian State University</p>
+        </section>
+        <section class="section" id="languages">
+            <h2 class="languages-title">Languages</h2>
+            <ul class="languages-list">
+                <li class="languages-item">Russian - native</li>
+                <li class="languages-item">English - B1</li>
+            </ul>
+        </section>
     </main>
     <footer></footer>
 </body>
